@@ -1,0 +1,60 @@
+---
+import { Image } from "astro:assets"
+import Mockup from "../images/mock-up-replace.png"
+---
+
+<div
+  class="w-full p-6 flex flex-col sm:flex-row items-center pt-18 sm:pt-48 sm:h-[500px] sm:mb-24"
+>
+  <div>
+    <h1
+      class="font-poppins font-bold text-white text-4xl md:text-5xl md:w-[500px] !leading-tight text-center sm:text-left"
+    >
+      The smarter flashcard app.
+    </h1>
+    <p
+      class="text-white font-poppins mt-8 text-center sm:text-left px-4 sm:px-0 sm:text-lg"
+    >
+      Track your studying. Get help from AI.<br
+      />
+      <div class="mt-4 sm:mt-0 text-white text-center sm:text-left font-poppins">
+      Learn <span class="font-bold">3x faster</span> than with normal flashcards.
+    </div>
+    </p>
+  </div>
+  <Image
+    src={Mockup}
+    alt="mock up"
+    height="480"
+    width="560"
+    class="mt-6 sm:mt-8 sm:ml-8 relative z-2"
+  />
+</div>
+
+<style>
+  .fadein {
+    opacity: 0;
+    animation: fade-in 2s ease-in forwards;
+    animation-delay: 0.25s;
+  }
+  .fadein2 {
+    opacity: 0;
+    animation: fade-in 2s ease-in forwards;
+    animation-delay: 0.5s;
+  }
+
+  .fadein3 {
+    opacity: 0;
+    animation: fade-in 2s ease-in forwards;
+    animation-delay: 1s;
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+</style>
