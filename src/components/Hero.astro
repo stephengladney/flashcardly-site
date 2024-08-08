@@ -35,11 +35,17 @@ import Both from "../images/both.png";
       <div
         class="mt-8 hidden sm:flex flex-row gap-3 justify-center lg:justify-start"
       >
-        <Image
-          src={iOSAppStore}
-          alt="Download on the Apple App Store"
+        <a
           class="w-1/3"
-        />
+          href="https://apps.apple.com/us/app/flashcardly/id6472301460"
+          target="_blank"
+        >
+          <Image
+            src={iOSAppStore}
+            alt="Download on the Apple App Store"
+            class="w-full"
+          />
+        </a>
         <Image src={GooglePlay} alt="Get it on Google Play" class="w-1/3" />
       </div>
     </p>
